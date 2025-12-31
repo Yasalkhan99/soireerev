@@ -35,6 +35,6 @@ yarn-error.log*
 next-env.d.ts
 
 # large video files
-public/banner_bk_video.mp4
-*.mp4
+# public/banner_bk_video.mp4
+# *.mp4
 
