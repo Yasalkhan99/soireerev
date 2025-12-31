@@ -220,7 +220,7 @@
     }
     img {
       width: 100%;
-      min-height: 300px;
+      min-height: 240px;
     }
 
     .portfolio__single-content {
@@ -232,12 +232,12 @@
       text-align: end;
       display: flex;
       flex-direction: column;
-      gap: 60px;
+      gap: 10px;
       align-items: flex-end;
       justify-content: flex-end;
       transform: translateY(-160%) scale(1.4);
       transition: var(--transition);
-      max-width: 90%;
+      max-width: 80%;
 
       a {
         width: auto;
@@ -575,8 +575,8 @@
     }
 
     .offer-thumb-hover {
-      width: 200px;
-      height: 270px;
+      width: 160px;
+      height: 190px;
       position: absolute;
       top: 50%;
       transform: translateY(-50%) rotate(45deg);
@@ -585,8 +585,7 @@
       background-repeat: no-repeat;
       background-position-x: 75%;
       opacity: 0;
-      transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1),
-        -webkit-transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+      transition: opacity 0.3s, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
       margin: -200px 0 0 -150px;
       overflow: hidden;
       pointer-events: none;
@@ -734,8 +733,8 @@
       gap: 30px;
       margin-bottom: 0px;
       font-family: sans-serif;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 2px var(--white);
+      -webkit-text-fill-color: #ffffff;
+      -webkit-text-stroke: 2px #1c46ff;
       i {
         -webkit-text-fill-color: var(--primary-color);
         -webkit-text-stroke: 0px var(--primary-color);
@@ -1085,8 +1084,8 @@
       h2 {
         a {
           font-family: sans-serif;
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke: 2px var(--white);
+          -webkit-text-fill-color: #ffffff;
+          -webkit-text-stroke: 3px #1c46ff;
           color: transparent;
           i {
             -webkit-text-fill-color: transparent;

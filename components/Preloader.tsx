@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 
 export default function Preloader() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -11,7 +11,7 @@ export default function Preloader() {
     }, 800)
 
     return () => clearTimeout(timer)
-  }, [])
+  }, []);
 
   if (!isLoading) return null
 

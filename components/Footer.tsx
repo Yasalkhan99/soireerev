@@ -103,9 +103,7 @@ export default function Footer() {
                     <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
                       <i className="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </a>
+                 
                     <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                       <i className="fa-brands fa-instagram"></i>
                     </a>

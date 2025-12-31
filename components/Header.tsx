@@ -63,7 +63,7 @@ export default function Header() {
             <div className="offcanvas-menu__list">
               <div className="navbar__menu">
                 <ul>
-                  <li className="navbar__item navbar__item--has-children nav-fade">
+                  {/* <li className="navbar__item navbar__item--has-children nav-fade">
                     <a href="#" aria-label="dropdown menu" className="navbar__dropdown-label">
                       Home
                     </a>
@@ -99,13 +99,16 @@ export default function Header() {
                         <Link href="/index-five-light">Interactive Portfolio Light</Link>
                       </li>
                     </ul>
+                  </li> */}
+                  <li className="navbar__item nav-fade">
+                    <Link href="/">Home</Link>
                   </li>
                   <li className="navbar__item nav-fade">
                     <Link href="/about-us">About Us</Link>
                   </li>
                   <li className="navbar__item navbar__item--has-children nav-fade">
                     <a href="#" aria-label="dropdown menu" className="navbar__dropdown-label">
-                      Services
+                      Products
                     </a>
                     <ul className="navbar__sub-menu">
                       <li>
@@ -118,7 +121,7 @@ export default function Header() {
                   </li>
                   <li className="navbar__item navbar__item--has-children nav-fade">
                     <a href="#" aria-label="dropdown menu" className="navbar__dropdown-label">
-                      Projects
+                      Devices
                     </a>
                     <ul className="navbar__sub-menu">
                       <li>
@@ -129,7 +132,7 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-                  <li className="navbar__item navbar__item--has-children nav-fade">
+                  {/* <li className="navbar__item navbar__item--has-children nav-fade">
                     <a href="#" aria-label="dropdown menu" className="navbar__dropdown-label">
                       Pages
                     </a>
@@ -166,8 +169,8 @@ export default function Header() {
                         <Link href="/contact-us">Contact Us</Link>
                       </li>
                     </ul>
-                  </li>
-                  <li className="navbar__item navbar__item--has-children nav-fade">
+                  </li> */}
+                  {/* <li className="navbar__item navbar__item--has-children nav-fade">
                     <a href="#" aria-label="dropdown menu" className="navbar__dropdown-label">
                       Blog
                     </a>
@@ -179,7 +182,7 @@ export default function Header() {
                         <Link href="/blog-single">Blog Details</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
