@@ -19,16 +19,26 @@ export default function Home() {
           <main>
             {/* Banner Section */}
             <section className="banner">
-              <div className="container">
+              <video autoPlay loop muted playsInline className="banner__video">
+                <source src="/banner_bk_video.mp4" type="video/mp4" />
+              </video>
+              <div className="lines d-none d-lg-flex">
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+              </div>
+              <div className="container banner-container">
                 <div className="row">
                   <div className="col-12">
                     <div className="banner__content">
                       <h1 className="text-uppercase text-start fw-9 mb-0 title-anim">
-                        We are
-                        <span className="text-stroke">creative</span>
+                        Upgrade Your
+                        <span className="text-stroke">Business</span>
                         <span className="interval">
                           <i className="icon-arrow-top-right"></i>
-                          digital agency
+                          With SoireeInc
                         </span>
                       </h1>
                       <div className="banner__content-inner">
@@ -51,13 +61,13 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Image
+              {/* <Image
                 src="/assets/images/banner/banner-one-thumb.png"
                 alt="Image"
                 width={800}
                 height={600}
                 className="banner-one-thumb d-none d-sm-block g-ban-one"
-              />
+              /> */}
               <Image src="/assets/images/star.png" alt="Image" className="star" width={50} height={50} />
               <div className="banner-left-text banner-social-text d-none d-md-flex">
                 <a href="mailto:info@soireinc.com">mail : info@soireinc.com</a>
@@ -76,15 +86,15 @@ export default function Home() {
               </div>
               <a className="video-frame video-btn" href="https://www.youtube.com/watch?v=RvreULjnzFo" target="_blank" rel="noopener noreferrer">
                 <Image src="/assets/images/video-frame.png" alt="Image" width={200} height={200} />
-                <i className="fa-sharp fa-solid fa-play"></i>
+                <i className="fa-sharp fa-solid fa-play" style={{ color: '#0633f8' }}></i>
               </a>
-              <div className="lines d-none d-lg-flex">
+              {/* <div className="lines d-none d-lg-flex">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
-              </div>
+              </div> */}
             </section>
 
             {/* Agency Section */}
@@ -539,7 +549,7 @@ export default function Home() {
         <span></span>
       </div>
       {/* Video Modal */}
-      <div className="vid-m">
+      {/* <div className="vid-m">
         <div className="vid-c">
           <a href="#" aria-label="close video popup" className="close-v">
             <i className="fa-light fa-xmark-large"></i>
@@ -549,7 +559,7 @@ export default function Home() {
           </video>
           <h5>Hello</h5>
         </div>
-      </div>
+      </div> */}
       <ScriptLoader />
     </div>
   )

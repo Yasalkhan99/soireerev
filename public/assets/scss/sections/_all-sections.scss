@@ -4,7 +4,7 @@
 
 // 5.01  agency styles
 .agency {
-  background-color: var(--tertiary-color);
+  background-color: #ffffff;
   z-index: 1;
   position: relative;
 
@@ -154,6 +154,7 @@
 // 5.03 portfolio styles
 .portfolio {
   overflow-x: clip;
+  background: #fff;
   .portfolio__text-slider {
     margin-bottom: 80px;
   }
@@ -173,8 +174,8 @@
     &:nth-of-type(even) {
       h2 {
         font-family: sans-serif;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px var(--white);
+        -webkit-text-fill-color: #1c46ff;
+        -webkit-text-stroke: 2px #1c46ff;
         i {
           -webkit-text-fill-color: transparent;
           -webkit-text-stroke: 2px var(--primary-color);
@@ -353,8 +354,8 @@
     &:nth-of-type(even) {
       h2 {
         font-family: sans-serif;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px var(--white);
+        -webkit-text-fill-color: #1c46ff;
+        -webkit-text-stroke: 2px #1c46ff;
         i {
           -webkit-text-fill-color: transparent;
           -webkit-text-stroke: 2px var(--primary-color);
@@ -513,6 +514,11 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  &.light {
+    background: #fff;
+  }
+
   .star {
     position: absolute;
     bottom: 20%;

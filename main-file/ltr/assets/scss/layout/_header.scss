@@ -197,10 +197,16 @@
 
 // secondary navbar
 .secondary--navbar {
-  padding: 30px 0px;
+  padding: 10px 0px;
 
   .open-offcanvas-nav {
-    @include box(80px);
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #414141;
     position: relative;
     &::before {
@@ -491,7 +497,7 @@
 
 // quaternary navbar
 .quaternary--navbar {
-  padding: 30px 0px;
+  padding: 10px 0px;
 
   .open-offcanvas-nav {
     font-size: 30px;
