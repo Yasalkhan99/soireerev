@@ -135,16 +135,16 @@ export default function Products() {
               <div className="container-fluid">
                 <div className="row gaper">
                   {[
-                    { img: "/assets/images/d1.png", title: "Clover" },
-                    { img: "/assets/images/d2.png", title: "Peripherals" },
-                    { img: "/assets/images/d3.png", title: "PAX" },
-                    { img: "/assets/images/d4.png", title: "NRS" },
-                    { img: "/assets/images/d5.png", title: "Peripherals" },
-                    { img: "/assets/images/d6.png", title: "Clover" },
+                    { img: "/assets/images/d1.png", title: "Clover", joinedLink: "/products/clover" },
+                    { img: "/assets/images/p1.png", title: "Peripherals", joinedLink: "/products/peripherals" },
+                    { img: "/assets/images/d3.png", title: "PAX", joinedLink: "/products/pax" },
+                    { img: "/assets/images/d4.png", title: "NRS", joinedLink: "/products/nrs" },
+                    { img: "/assets/images/d5.png", title: "Peripherals", joinedLink: "/products/peripherals" },
+                    { img: "/assets/images/d6.png", title: "Clover", joinedLink: "/products/clover" },
                   ].map((item, index) => (
                     <div key={index} className="col-12 col-sm-6 col-xl-3">
                       <div
-                        className={`portfolio__single rounded-3xl relative max-h-[450px] h-full ${
+                        className={`portfolio__single rounded-3xl relative max-h-[350px] h-full ${
                           index === 0 ? "portfolio__single-active" : ""
                         } topy-tilt fade-top`}
                       >
@@ -157,16 +157,16 @@ export default function Products() {
                         />
                         <Image
                           src={item.img}
-                          className="!w-auto !h-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 relative z-30"
+                          className="!w-[90%] !min-h-auto !max-h-[280px] !object-contain !h-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 relative z-30"
                           alt="bk"
                           width={1000}
                           height={1000}
                         />
                         <Link
-                          href="/portfolio"
+                          href={item.joinedLink}
                           className="w-full h-full"
                         ></Link>
-                        <Link href="/portfolio">
+                        <Link href={item.joinedLink}>
                           <Image
                             src={item.img}
                             alt={item.title}
@@ -175,11 +175,11 @@ export default function Products() {
                           />
                         </Link>
                         <div className="portfolio__single-content z-50">
-                          <Link href="/portfolio">
+                          <Link href={item.joinedLink}>
                             <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                           </Link>
                           <h4>
-                            <Link href="/portfolio">{item.title}</Link>
+                            <Link href={item.joinedLink}>{item.title}</Link>
                           </h4>
                         </div>
                       </div>
@@ -280,10 +280,10 @@ export default function Products() {
                       </div>
                       <div className="section__content-cta relative z-50">
                         <Link
-                          href="/our-services"
+                          href="/products"
                           className="btn btn--secondary"
                         >
-                          view all devices
+                          view all products
                         </Link>
                       </div>
                     </div>

@@ -112,16 +112,16 @@ export default function Header() {
                     </a>
                     <ul className="navbar__sub-menu">
                       <li>
-                        <Link href="/products">Clover</Link>
+                        <Link href="/products/clover">Clover</Link>
                       </li>
                       <li>
-                        <Link href="/products">Peripherals</Link>
+                        <Link href="/products/peripherals">Peripherals</Link>
                       </li>
                       <li>
-                        <Link href="/products">PAX</Link>
+                        <Link href="/products/pax">PAX</Link>
                       </li>
                       <li>
-                        <Link href="/products">NRS</Link>
+                        <Link href="/products/nrs">NRS</Link>
                       </li>
                     </ul>
                   </li>
