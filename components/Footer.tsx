@@ -22,17 +22,7 @@ export default function Footer() {
                 />
               </Link>
               <p className="!text-white">
-                Soireeinc® is a registered MSP/ISO (Merchant Service
-                Provider/Independent Sales Organization) that has established
-                partnerships with leading financial institutions such as Elavon,
-                Inc. (a wholly-owned subsidiary of U.S. Bancorp based in
-                Georgia), Wells Fargo Bank, N.A. (Concord, CA), Esquire Bank,
-                N.A. (Jericho, NY), and Commercial Bank of California (Irving,
-                CA). All referenced trademarks and brands belong to their
-                respective owners. Please note that American Express may require
-                a separate approval process. Additionally, Clover is a
-                registered trademark of Clover Network, Inc., a Fiserv company,
-                and is used in the U.S. and other markets under license.
+                Soireeinc® is a registered MSP/ISO (Merchant Service Provider/Independent Sales Organization) that has established partnerships with leading financial institutions such as Fiserv, Inc  (American multinational financial technology company headquartered in Milwaukee, Wisconsin), Paysafe, (Jacksonville, FL), Micamp, (Scottsdale, AZ), Merchant Industry (Swipe4free | Island City, NY) and NAB (Troy, MI). All referenced trademarks and brands belong to their respective owners. Please note that American Express may require a separate approval process. Additionally, Clover is a registered trademark of Clover Network, Inc., a Fiserv company, and is used in the U.S. and other markets under license.
               </p>
             </div>
           </div>

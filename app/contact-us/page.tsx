@@ -39,13 +39,7 @@ export default function ContactUs() {
                       </h1>
                       <div className="banner__content-inner !mt-[30px]">
                         <p>
-                          Headquartered in the United States with a presence in
-                          all 50 states, Soireeinc delivers personalized payment
-                          processing solutions with the convenience of local
-                          support and the reliability of a national provider.
-                          Our nationwide network of offices and agents ensures
-                          fast, responsive service tailored to your business
-                          needs—wherever you operate.
+                          Soireeinc is a US-based company specializing in offering a wide range of point of sale (POS) devices. Our products range from small handheld devices to full-scale POS setups. We provide devices that grow with your business and integrate with your already-existing system for performance optimization. Our latest drops consist of Android-powered POS systems specially made to mimic the ease of use and convenience of an Android tablet/phone. We take pride in catering to all scales of business, from rising small-scale businesses to large enterprises.
                         </p>
                         {/* <div className="cta section__content-cta !mt-[20px]">
                           <div className="single flex items-start gap-2">
@@ -214,7 +208,7 @@ export default function ContactUs() {
                   </div>
                 ))}
               </div>
-              <div className="border-2 border-l-0 border-r-0 border-[#0633f8] position-relative bg-white !m-0 !w-full !py-[80px]">
+              <div className="position-relative bg-white" style={{ borderTop: '2px solid #0633f8', borderBottom: '2px solid #0633f8', margin: 0, width: '100%', paddingTop: '80px', paddingBottom: '80px', position: 'relative', zIndex: 40 }}>
                 <div className="row">
                   <div className="col-12 col-xxl-10">
                     <div className="testimonial-s__slider">
@@ -297,7 +291,7 @@ export default function ContactUs() {
                   </a>
                 </div>
               </div>
-              <div className="lines d-none d-lg-flex bg-white">
+              <div className="lines d-none d-lg-flex">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
@@ -388,7 +382,7 @@ export default function ContactUs() {
             </section>
 
             {/* Sponsor Section */}
-            <div className="sponsor section !py-[60px] bg-[#000621] !relative !z-40">
+            <div className="sponsor section" style={{ paddingTop: '60px', paddingBottom: '60px', backgroundColor: '#000621', position: 'relative', zIndex: 40 }}>
               <div className="container-fluid">
                 <div className="row justify-content-center">
                   <div className="col-12">
@@ -396,19 +390,18 @@ export default function ContactUs() {
                       {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((i) => (
                         <div key={i} className="sponsor__slider-item">
                           <Image
-                            src={`/assets/images/sponsor/${
-                              i === 1
+                            src={`/assets/images/sponsor/${i === 1
                                 ? "one"
                                 : i === 2
-                                ? "two"
-                                : i === 3
-                                ? "three"
-                                : i === 4
-                                ? "four"
-                                : i === 5
-                                ? "five"
-                                : "six"
-                            }.png`}
+                                  ? "two"
+                                  : i === 3
+                                    ? "three"
+                                    : i === 4
+                                      ? "four"
+                                      : i === 5
+                                        ? "five"
+                                        : "six"
+                              }.png`}
                             alt="Image"
                             width={150}
                             height={80}

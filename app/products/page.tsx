@@ -133,7 +133,7 @@ export default function Products() {
                 ))}
               </div>
               <div className="container-fluid">
-                <div className="row gaper">
+                <div className="row gaper relative z-50">
                   {[
                     { img: "/assets/images/d1.png", title: "Clover", joinedLink: "/products/clover" },
                     { img: "/assets/images/p1.png", title: "Peripherals", joinedLink: "/products/peripherals" },
@@ -239,7 +239,7 @@ export default function Products() {
                   </div>
                 </div>
               </div>
-              <div className="lines d-none d-lg-flex !bg-white">
+              <div className="lines d-none d-lg-flex">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
@@ -340,7 +340,7 @@ export default function Products() {
                 width={50}
                 height={50}
               />
-              <div className="lines d-none d-lg-flex">
+              <div className="lines d-none d-lg-flex !bg-white">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
@@ -350,7 +350,7 @@ export default function Products() {
             </section>
 
             {/* Testimonial Section */}
-            <section className="section testimonial pt-0 position-relative !z-40 !bg-transparent">
+            <section className="section testimonial pt-0 position-relative !z-40 !bg-white">
               <div className="testimonial__text-slider">
                 {[1, 2, 3, 4, 5, 6, 7].map((i) => (
                   <div key={i} className="testimonial__text-slider-single">
@@ -363,7 +363,7 @@ export default function Products() {
                   </div>
                 ))}
               </div>
-              <div className="border-2 border-l-0 border-r-0 border-[#0633f8] position-relative bg-white !m-0 !w-full !py-[80px]">
+              <div className="position-relative bg-white" style={{ borderTop: '2px solid #0633f8', borderBottom: '2px solid #0633f8', margin: 0, width: '100%', paddingTop: '80px', paddingBottom: '80px', position: 'relative', zIndex: 40 }}>
                 <div className="row">
                   <div className="col-12 col-xxl-10">
                     <div className="testimonial-s__slider">
@@ -446,7 +446,7 @@ export default function Products() {
                   </a>
                 </div>
               </div>
-              <div className="lines d-none d-lg-flex bg-white">
+              <div className="lines d-none d-lg-flex">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
@@ -537,7 +537,7 @@ export default function Products() {
             </section>
 
             {/* Sponsor Section */}
-            <div className="sponsor section !py-[60px] bg-[#000621] !relative !z-40">
+            <div className="sponsor section" style={{ paddingTop: '60px', paddingBottom: '60px', backgroundColor: '#000621', position: 'relative', zIndex: 40 }}>
               <div className="container-fluid">
                 <div className="row justify-content-center">
                   <div className="col-12">

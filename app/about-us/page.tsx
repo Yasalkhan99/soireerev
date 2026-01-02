@@ -397,7 +397,7 @@ export default function AboutUs() {
                   </div>
                 ))}
               </div>
-              <div className="border-2 border-l-0 border-r-0 border-[#0633f8] position-relative bg-white !m-0 !w-full !py-[80px]">
+              <div className="position-relative bg-white" style={{ borderTop: '2px solid #0633f8', borderBottom: '2px solid #0633f8', margin: 0, width: '100%', paddingTop: '80px', paddingBottom: '80px', position: 'relative', zIndex: 40 }}>
                 <div className="row">
                   <div className="col-12 col-xxl-10">
                     <div className="testimonial-s__slider">
@@ -480,7 +480,7 @@ export default function AboutUs() {
                   </a>
                 </div>
               </div>
-              <div className="lines d-none d-lg-flex bg-white">
+              <div className="lines d-none d-lg-flex">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
@@ -571,7 +571,7 @@ export default function AboutUs() {
             </section>
 
             {/* Sponsor Section */}
-            <div className="sponsor section !py-[60px] bg-[#000621] !relative !z-40">
+            <div className="sponsor section" style={{ paddingTop: '60px', paddingBottom: '60px', backgroundColor: '#000621', position: 'relative', zIndex: 40 }}>
               <div className="container-fluid">
                 <div className="row justify-content-center">
                   <div className="col-12">

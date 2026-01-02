@@ -140,13 +140,10 @@ export default function Home() {
                           WELCOME
                         </span>
                       </div>
-                      <h2 className="title title-anim">Retail POS Systems</h2>
+                      <h2 className="title title-anim !py-3 !text-[32px] !leading-[45px]">A Trusted and Affordable Retail POS System that Works as Hard as You Do!</h2>
                       <div className="paragraph">
                         <p className="!mb-4">
-                          Enhance your POS with advanced inventory tools to
-                          seamlessly manage your retail operations across
-                          multiple locations and sales channels. Access detailed
-                          reports anytime to identify growth opportunities.
+                          Manage your inventory like a pro with the Soireeinc smart POS terminal, designed for speed, security, and seamless transactions.
                         </p>
                         <p>Enjoy powerful features such as:</p>
                       </div>
@@ -157,7 +154,7 @@ export default function Home() {
                               <i className="fa-solid fa-check-circle text-[#1c46ff] text-[22px]"></i>
                             </div>
                             <p className="primary-text !text-[16px]">
-                              low-stock alerts
+                              Fast & Efficient
                             </p>
                           </div>
                         </div>
@@ -167,7 +164,7 @@ export default function Home() {
                               <i className="fa-solid fa-check-circle text-[#1c46ff] text-[22px]"></i>
                             </div>
                             <p className="primary-text !text-[16px]">
-                              unified in-store & online sales
+                              Secure
                             </p>
                           </div>
                         </div>
@@ -177,14 +174,14 @@ export default function Home() {
                               <i className="fa-solid fa-check-circle text-[#1c46ff] text-[22px]"></i>
                             </div>
                             <p className="primary-text !text-[16px]">
-                              Comprehensive Vendor Sales Reporting
+                              Easy to Use
                             </p>
                           </div>
                         </div>
                       </div>
                       <div className="section__content-cta !mt-8">
-                        <Link href="/about-us" className="btn btn--primary">
-                          Know More
+                        <Link href="/products" className="btn btn--primary">
+                          Shop Devices
                         </Link>
                       </div>
                     </div>
@@ -230,7 +227,7 @@ export default function Home() {
                 ))}
               </div>
               <div className="container-fluid">
-                <div className="row gaper">
+                <div className="row gaper relative z-50">
                   {[
                     { img: "/assets/images/c1.png", title: "Clover", joinedLink: "/products/clover" },
                     { img: "/assets/images/p1.png", title: "Peripherals", joinedLink: "/products/peripherals" },
@@ -241,9 +238,8 @@ export default function Home() {
                   ].map((item, index) => (
                     <div key={index} className="col-12 col-sm-6 col-xl-3">
                       <div
-                        className={`portfolio__single rounded-3xl relative max-h-[350px] h-full ${
-                          index === 0 ? "portfolio__single-active" : ""
-                        } topy-tilt fade-top`}
+                        className={`portfolio__single rounded-3xl relative max-h-[350px] h-full ${index === 0 ? "portfolio__single-active" : ""
+                          } topy-tilt fade-top`}
                       >
                         <Image
                           src="/assets/images/device-bk.png"
@@ -284,27 +280,13 @@ export default function Home() {
                   ))}
                   <div className="col-12 col-sm-6 col-xl-3">
                     <div className="portfolio__single-alt-wrapper !rounded-3xl max-h-[450px] relative h-full fade-top">
-                      <div className="portfolio__single-alt topy-tilt">
+                      <div className="portfolio__single-alt topy-tilt !justify-center">
                         <h4>
                           <Link href="/products">view all products</Link>
                         </h4>
-                        <Link href="/products" className="arr justify-center">
+                        <Link href="/products" className="arr !text-[50px] justify-center">
                           <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                         </Link>
-                        <Image
-                          src="/assets/images/portfolio/dot.png"
-                          alt="Image"
-                          className="dot-one"
-                          width={20}
-                          height={20}
-                        />
-                        <Image
-                          src="/assets/images/portfolio/dot.png"
-                          alt="Image"
-                          className="dot-two"
-                          width={20}
-                          height={20}
-                        />
                       </div>
                     </div>
                   </div>
@@ -336,7 +318,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="lines d-none d-lg-flex !bg-white">
+              <div className="lines d-none d-lg-flex ">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
@@ -346,7 +328,7 @@ export default function Home() {
             </section>
 
             {/* Offer Section */}
-            <section className="section offer fade-wrapper light !z-40 !bg-transparent">
+            <section className="section offer fade-wrapper light !z-40 !bg-white">
               <div className="container  relative z-40">
                 <div className="row gaper">
                   <div className="col-12 col-lg-5">
@@ -361,8 +343,8 @@ export default function Home() {
                         WHAT WE OFFER
                         <i className="fa-solid fa-arrow-right"></i>
                       </span> */}
-                      <h2 className="title title-anim">
-                        Devices That Handles All
+                      <h2 className="title title-anim !text-[38px] !leading-[60px]">
+                        Pick a Point of Sale System That Fits Your Industry
                       </h2>
                       <div className="paragraph">
                         <p>
@@ -380,7 +362,7 @@ export default function Home() {
                           href="/products"
                           className="btn btn--secondary"
                         >
-                          view all products
+                          Shop Devices
                         </Link>
                       </div>
                     </div>
@@ -464,7 +446,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="border-2 border-l-0 border-r-0 border-[#0633f8] position-relative bg-white !m-0 !w-full !py-[80px]">
+              <div className="position-relative bg-white" style={{ borderTop: '2px solid #0633f8', borderBottom: '2px solid #0633f8', margin: 0, width: '100%', paddingTop: '80px', paddingBottom: '80px', position: 'relative', zIndex: 40 }}>
                 <div className="row">
                   <div className="col-12 col-xxl-10">
                     <div className="testimonial-s__slider">
@@ -547,13 +529,13 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="lines d-none d-lg-flex bg-white">
+              {/* <div className="lines d-none d-lg-flex bg-white">
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
                 <div className="line"></div>
-              </div>
+              </div> */}
             </section>
 
             {/* Blog Section */}
@@ -638,7 +620,7 @@ export default function Home() {
             </section>
 
             {/* Sponsor Section */}
-            <div className="sponsor section !py-[60px] bg-[#000621] !relative !z-40">
+            <div className="sponsor section" style={{ paddingTop: '60px', paddingBottom: '60px', backgroundColor: '#000621', position: 'relative', zIndex: 40 }}>
               <div className="container-fluid">
                 <div className="row justify-content-center">
                   <div className="col-12">
@@ -646,19 +628,18 @@ export default function Home() {
                       {[1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6].map((i) => (
                         <div key={i} className="sponsor__slider-item">
                           <Image
-                            src={`/assets/images/sponsor/${
-                              i === 1
-                                ? "one"
-                                : i === 2
+                            src={`/assets/images/sponsor/${i === 1
+                              ? "one"
+                              : i === 2
                                 ? "two"
                                 : i === 3
-                                ? "three"
-                                : i === 4
-                                ? "four"
-                                : i === 5
-                                ? "five"
-                                : "six"
-                            }.png`}
+                                  ? "three"
+                                  : i === 4
+                                    ? "four"
+                                    : i === 5
+                                      ? "five"
+                                      : "six"
+                              }.png`}
                             alt="Image"
                             width={150}
                             height={80}

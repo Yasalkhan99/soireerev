@@ -2,8 +2,11 @@
 
 import { useEffect } from 'react'
 import Script from 'next/script'
+import { usePathname } from 'next/navigation'
 
 export default function ScriptLoader() {
+  const pathname = usePathname()
+
   useEffect(() => {
     // Initialize scripts after component mounts
     if (typeof window !== 'undefined') {
@@ -82,6 +85,92 @@ export default function ScriptLoader() {
       setTimeout(loadScriptsSequentially, 100)
     }
   }, [])
+
+  // Reinitialize sliders on route change
+  useEffect(() => {
+    const reinitializeSliders = () => {
+      const jQuery = (window as any).jQuery
+      if (!jQuery || !jQuery.fn.slick) {
+        setTimeout(reinitializeSliders, 100)
+        return
+      }
+
+      // Destroy existing sliders before reinitializing
+      const sliders = [
+        '.portfolio__text-slider',
+        '.testimonial__text-slider',
+        '.next__text-slider'
+      ]
+
+      sliders.forEach((selector) => {
+        const slider = document.querySelector(selector)
+        if (slider && jQuery(slider).hasClass('slick-initialized')) {
+          try {
+            jQuery(slider).slick('unslick')
+          } catch (e) {
+            // Ignore errors if slider is already destroyed
+          }
+        }
+      })
+
+      // Wait a bit for DOM to be ready, then reinitialize
+      setTimeout(() => {
+        // Portfolio text slider
+        const portfolioSlider = document.querySelector('.portfolio__text-slider')
+        if (portfolioSlider && !jQuery(portfolioSlider).hasClass('slick-initialized')) {
+          jQuery(portfolioSlider).slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 10000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            variableWidth: true,
+          })
+        }
+
+        // Testimonial text slider
+        const testimonialSlider = document.querySelector('.testimonial__text-slider')
+        if (testimonialSlider && !jQuery(testimonialSlider).hasClass('slick-initialized')) {
+          jQuery(testimonialSlider).slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 10000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            variableWidth: true,
+          })
+        }
+
+        // Next page text slider
+        const nextSlider = document.querySelector('.next__text-slider')
+        if (nextSlider && !jQuery(nextSlider).hasClass('slick-initialized')) {
+          jQuery(nextSlider).slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 10000,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            variableWidth: true,
+          })
+        }
+      }, 300)
+    }
+
+    // Reinitialize when pathname changes
+    reinitializeSliders()
+  }, [pathname])
 
   return (
     <>
