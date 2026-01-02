@@ -112,14 +112,23 @@ export default function Header() {
                     </a>
                     <ul className="navbar__sub-menu">
                       <li>
-                        <Link href="/our-services">Our Services</Link>
+                        <Link href="/products">Clover</Link>
                       </li>
                       <li>
-                        <Link href="/service-single">Service Details</Link>
+                        <Link href="/products">Peripherals</Link>
+                      </li>
+                      <li>
+                        <Link href="/products">PAX</Link>
+                      </li>
+                      <li>
+                        <Link href="/products">NRS</Link>
                       </li>
                     </ul>
                   </li>
-                  <li className="navbar__item navbar__item--has-children nav-fade">
+                  <li className="navbar__item nav-fade">
+                    <Link href="/contact-us">Contact Us</Link>
+                  </li>
+                  {/* <li className="navbar__item navbar__item--has-children nav-fade">
                     <a href="#" aria-label="dropdown menu" className="navbar__dropdown-label">
                       Devices
                     </a>
@@ -131,7 +140,7 @@ export default function Header() {
                         <Link href="/project-single">Project Details</Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   {/* <li className="navbar__item navbar__item--has-children nav-fade">
                     <a href="#" aria-label="dropdown menu" className="navbar__dropdown-label">
                       Pages
@@ -189,21 +198,18 @@ export default function Header() {
             <div className="offcanvas-menu__options nav-fade">
               <div className="offcanvas__mobile-options d-flex">
                 <Link href="/contact-us" className="btn btn--secondary">
-                  Let&apos;s Talk
+                  Let&apos;s Connect
                 </Link>
               </div>
             </div>
             <div className="offcanvas-menu__social social nav-fade">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="share us on facebook">
+              <a href="https://www.facebook.com/soireeincofficial" target="_blank" rel="noopener noreferrer" aria-label="share us on facebook">
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="share us on twitter">
+              <a href="https://x.com/soireeIINC" target="_blank" rel="noopener noreferrer" aria-label="share us on twitter">
                 <i className="fa-brands fa-twitter"></i>
               </a>
-              <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" aria-label="share us on pinterest">
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="share us on instagram">
+              <a href="https://www.instagram.com/soireeinc9/" target="_blank" rel="noopener noreferrer" aria-label="share us on instagram">
                 <i className="fa-brands fa-instagram"></i>
               </a>
             </div>

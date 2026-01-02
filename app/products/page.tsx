@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 
-export default function Home() {
+export default function Products() {
   return (
     <div className="my-app">
       <Preloader />
@@ -33,15 +33,15 @@ export default function Home() {
                 <div className="row">
                   <div className="col-12">
                     <div className="banner__content">
-                      <h1 className="text-lowercase !capitalize text-start fw-9 mb-0 title-anim !text-[78px] text-center !leading-[130px] [@media(max-width:1400px)]:!leading-[80px]">
-                        Upgrade Your
-                        <span className="text-stroke !pl-[15px]">
-                          Business With
+                      <h1 className="text-lowercase !capitalize text-start fw-9 mb-0 title-anim !text-[78px] text-center !leading-[90px] [@media(max-width:1400px)]:!leading-[80px]">
+                        Our Devices to
+                        <span className="text-stroke !pl-[15px] !block">
+                          Explore More
                         </span>
-                        <span className="interval justify-center gap-3 !-mt-8 [@media(max-width:1400px)]:!-mt-0 block">
+                        {/* <span className="interval justify-center gap-3 !-mt-8 [@media(max-width:1400px)]:!-mt-0 block">
                           <i className="fa-solid fa-arrow-right"></i>
                           SoireeInc POS Systems
-                        </span>
+                        </span> */}
                       </h1>
                       <div className="banner__content-inner !mt-[60px]">
                         <p>
@@ -110,103 +110,6 @@ export default function Home() {
               </a>
             </section>
 
-            {/* Agency Section */}
-            <section className="section agency !py-[80px]">
-              <div className="container">
-                <div className="row gaper align-items-center !min-h-full">
-                  <div className="col-12 col-lg-6 !min-h-full">
-                    <div className="agency__thumb relative !min-h-full">
-                      <Image
-                        src="/assets/images/retail-img-1.png"
-                        alt="Image"
-                        className="h-full thumb-one fade-left relative z-20 object-cover !max-w-[55%]"
-                        width={500}
-                        height={1000}
-                      />
-                      <Image
-                        src="/assets/images/retail-img-2.png"
-                        alt="Image"
-                        className="thumb-two !right-0 !ml-auto !-bottom-0 fade-right !max-w-[55%]"
-                        width={500}
-                        height={400}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-12 col-lg-6">
-                    <div className="">
-                      <div className="flex items-center gap-2">
-                        <i className="fa-solid fa-circle text-[#1c46ff] text-[6px]"></i>
-                        <span className="sub-title !border-none text-[#1c46ff] !pl-0 !mb-0">
-                          WELCOME
-                        </span>
-                      </div>
-                      <h2 className="title title-anim">Retail POS Systems</h2>
-                      <div className="paragraph">
-                        <p className="!mb-4">
-                          Enhance your POS with advanced inventory tools to
-                          seamlessly manage your retail operations across
-                          multiple locations and sales channels. Access detailed
-                          reports anytime to identify growth opportunities.
-                        </p>
-                        <p>Enjoy powerful features such as:</p>
-                      </div>
-                      <div className="skill-wrap !mt-5">
-                        <div className="skill-bar-single !mb-2">
-                          <div className="skill-bar-title flex items-center gap-2">
-                            <div>
-                              <i className="fa-solid fa-check-circle text-[#1c46ff] text-[22px]"></i>
-                            </div>
-                            <p className="primary-text !text-[16px]">
-                              low-stock alerts
-                            </p>
-                          </div>
-                        </div>
-                        <div className="skill-bar-single !mb-2">
-                          <div className="skill-bar-title flex items-center gap-2">
-                            <div>
-                              <i className="fa-solid fa-check-circle text-[#1c46ff] text-[22px]"></i>
-                            </div>
-                            <p className="primary-text !text-[16px]">
-                              unified in-store & online sales
-                            </p>
-                          </div>
-                        </div>
-                        <div className="skill-bar-single">
-                          <div className="skill-bar-title flex items-center gap-2">
-                            <div>
-                              <i className="fa-solid fa-check-circle text-[#1c46ff] text-[22px]"></i>
-                            </div>
-                            <p className="primary-text !text-[16px]">
-                              Comprehensive Vendor Sales Reporting
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="section__content-cta !mt-8">
-                        <Link href="/about-us" className="btn btn--primary">
-                          Know More
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <Image
-                src="/assets/images/star.png"
-                alt="Image"
-                className="star"
-                width={50}
-                height={50}
-              />
-              <Image
-                src="/assets/images/agency/dot-large.png"
-                alt="Image"
-                className="dot-large"
-                width={200}
-                height={200}
-              />
-            </section>
-
             {/* Portfolio Section */}
             <section className="section portfolio pb-0 fade-wrapper position-relative">
               <div className="portfolio__text-slider">
@@ -221,8 +124,8 @@ export default function Home() {
                 ].map((i) => (
                   <div key={i.id} className="portfolio__text-slider-single">
                     <h2 className="h1">
-                      <Link href="/products">
-                        Our Products
+                      <Link href="/portfolio">
+                        Our Devices
                         <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                       </Link>
                     </h2>
@@ -260,10 +163,10 @@ export default function Home() {
                           height={1000}
                         />
                         <Link
-                          href="/products"
+                          href="/portfolio"
                           className="w-full h-full"
                         ></Link>
-                        <Link href="/products">
+                        <Link href="/portfolio">
                           <Image
                             src={item.img}
                             alt={item.title}
@@ -272,39 +175,39 @@ export default function Home() {
                           />
                         </Link>
                         <div className="portfolio__single-content z-50">
-                          <Link href="/products">
+                          <Link href="/portfolio">
                             <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                           </Link>
                           <h4>
-                            <Link href="/products">{item.title}</Link>
+                            <Link href="/portfolio">{item.title}</Link>
                           </h4>
                         </div>
                       </div>
                     </div>
                   ))}
                   <div className="col-12 col-sm-6 col-xl-3">
-                    <div className="portfolio__single-alt-wrapper !rounded-3xl max-h-[450px] relative h-full fade-top">
-                      <div className="portfolio__single-alt topy-tilt">
-                        <h4>
-                          <Link href="/products">view all products</Link>
-                        </h4>
-                        <Link href="/products" className="arr justify-center">
+                    <div className="portfolio__single !rounded-3xl max-h-[450px] relative h-full topy-tilt fade-top">
+                      <Image
+                        src="/assets/images/device-bk.png"
+                        className="absolute top-0 left-0 w-full !min-h-full h-full"
+                        alt="bk"
+                        width={1000}
+                        height={1000}
+                      />
+                      <Image
+                        src="/assets/images/d7.png"
+                        className="!w-auto !h-auto absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 relative z-30"
+                        alt="bk"
+                        width={1000}
+                        height={1000}
+                      />
+                      <div className="portfolio__single-content z-50">
+                        <Link href="/portfolio">
                           <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                         </Link>
-                        <Image
-                          src="/assets/images/portfolio/dot.png"
-                          alt="Image"
-                          className="dot-one"
-                          width={20}
-                          height={20}
-                        />
-                        <Image
-                          src="/assets/images/portfolio/dot.png"
-                          alt="Image"
-                          className="dot-two"
-                          width={20}
-                          height={20}
-                        />
+                        <h4>
+                          <Link href="/portfolio">Clover</Link>
+                        </h4>
                       </div>
                     </div>
                   </div>
@@ -325,11 +228,11 @@ export default function Home() {
                         height={1000}
                       />
                       <div className="portfolio__single-content z-50">
-                        <Link href="/products">
+                        <Link href="/portfolio">
                           <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                         </Link>
                         <h4>
-                          <Link href="/products">Clover</Link>
+                          <Link href="/portfolio">Clover</Link>
                         </h4>
                       </div>
                     </div>
@@ -377,10 +280,10 @@ export default function Home() {
                       </div>
                       <div className="section__content-cta relative z-50">
                         <Link
-                          href="/products"
+                          href="/our-services"
                           className="btn btn--secondary"
                         >
-                          view all products
+                          view all devices
                         </Link>
                       </div>
                     </div>
@@ -673,7 +576,7 @@ export default function Home() {
                 <div className="row justify-content-center">
                   <div className="col-12 col-lg-8">
                     <div className="section__header text-center">
-                      <Link href="/about-us" className="sub-title mb-0">
+                      <Link href="/contact-us" className="sub-title mb-0">
                         Next Page
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
@@ -685,21 +588,14 @@ export default function Home() {
                 {[1, 2, 3, 4, 5, 6, 7].map((i) => (
                   <div key={i} className="next__text-slider-single">
                     <h2 className="h1">
-                      <Link href="/about-us">
-                        About Us
+                      <Link href="/contact-us">
+                        Contact Us
                         <i className="fa-sharp fa-solid fa-arrow-down-right"></i>
                       </Link>
                     </h2>
                   </div>
                 ))}
               </div>
-              {/* <div className="lines d-none d-lg-flex">
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-              </div> */}
             </section>
           </main>
           <Footer />
@@ -713,18 +609,6 @@ export default function Home() {
         <span></span>
         <span></span>
       </div>
-      {/* Video Modal */}
-      {/* <div className="vid-m">
-        <div className="vid-c">
-          <a href="#" aria-label="close video popup" className="close-v">
-            <i className="fa-light fa-xmark-large"></i>
-          </a>
-          <video autoPlay loop muted controls>
-            <source src="/assets/images/popup-video.mp4" type="video/mp4" />
-          </video>
-          <h5>Hello</h5>
-        </div>
-      </div> */}
       <ScriptLoader />
     </div>
   );
